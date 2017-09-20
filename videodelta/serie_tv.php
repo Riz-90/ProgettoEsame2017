@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>VIDEODELTA - Serie tv</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,15 +27,15 @@
   
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-8">
+			<div class="col-md-8">
 				<h1>VIDEODELTA</h1>
 			</div>
-			<div class="col-xs-4 hidden-xs">
+			<div class="col-md-4 hidden-xs hidden-sm">
 				<ul class="list-inline text-right">
-					<li class="active"><a href="#"><img src="images/Italy-Flag-icon (2).png" title="ITA" alt="ITA"></a></li>
-					<li><a href="#"><img src="images/United-Kingdom-flag-icon (2).png" title="ENG" alt="ENG"></a></li>
-					<li><a href="#"><img src="images/China-Flag-icon (2).png" title="CHI" alt="CHI"></a></li>
-					<li><a href="#"><img src="images/Russia-Flag-icon (2).png" title="RUS" alt="RUS"></a></li>
+					<li class="active"><a href="#"><img src="images/bandiere_lingua/Italy-Flag-icon (2).png" title="ITA" alt="ITA"></a></li>
+					<li><a href="#"><img src="images/bandiere_lingua/United-Kingdom-flag-icon (2).png" title="ENG" alt="ENG"></a></li>
+					<li><a href="#"><img src="images/bandiere_lingua/China-Flag-icon (2).png" title="CHI" alt="CHI"></a></li>
+					<li><a href="#"><img src="images/bandiere_lingua/Russia-Flag-icon (2).png" title="RUS" alt="RUS"></a></li>
 				</ul>
 			</div>
 		</div>
@@ -51,7 +51,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">VIDEODELTA</a>
+				<a class="navbar-brand" href="index.php">VIDEODELTA</a>
 			</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -113,8 +113,14 @@
 	</nav>
 
 		<div class="row">
-			<div class="col-xs-8">
-			<div class="page-header"><h2>Serie Tv</h2></div>
+			<div class="col-md-8">
+				<ol class="breadcrumb">
+					<li><a href="index.php">Home</a></li>
+					<li><a href="#">Crediti</a></li>
+					<li class="active">Serie tv</li>
+				</ol>
+				
+				<h2 class="page-header">Serie Tv</h2>
 			
 				<?php
 				
@@ -132,7 +138,7 @@
 						echo "<div class='row'>";
 					}
 					
-					echo "<div class='col-xs-3 bordo prova'>";
+					echo "<div class='col-md-3'>";
 					echo "<article><img class='img-thumbnail locandina' src='images/serie_tv/$immagine'>";
 					echo "<h5>$nome</h5>";
 					echo "</article>";
@@ -153,35 +159,135 @@
 				?>
 				
 			</div>
-			<div class="col-xs-4">
+			<div class="col-md-4">
 				<div class="panel-group">
 					<div class="panel panel-default">
-						<div class="panel-heading">Panel Heading</div>
-						<div class="panel-body">Panel Content</div>
+						<div class="panel-heading">
+							<button type="button" class="btn btn-danger btn-lg btn-block" data-toggle="collapse" data-target="#lavoraconnoi">Lavora con noi</button>
+						</div>
+						<div id="lavoraconnoi" class="panel-collapse collapse">
+							<div class="panel-body">
+								<!-- Trigger the modal with a button -->
+								<button type="button" class="btn btn-default btn-lg btn-block btn-success" data-toggle="modal" data-target="#proponicollaborazione">Proponi una collaborazione</button>
+							
+								<!-- Modal -->
+								<div class="modal fade" id="proponicollaborazione" role="dialog">
+									<div class="modal-dialog">
+    
+										<!-- Modal content-->
+										<div class="modal-content">
+	    									<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">Proponi una collaborazione</h4>
+											</div>
+											<div class="modal-body">
+												<form action="" method="">
+													<div class="form-group">
+														<label for="name">Nome</label>
+														<input type="text" class="form-control" name="name" id="name" placeholder="Inserisci nome">
+													</div>
+													<div class="form-group">
+														<label for="surname">Cognome</label>
+														<input type="text" class="form-control" name="surname" id="surname" placeholder="Inserisci cognome">
+													</div>
+													<div class="form-group">
+														<label for="">Email</label>
+														<input type="email" class="form-control" name="email" id="email" placeholder="Inserisci email">
+													</div>
+													<div class="form-group">
+														<label for="">...</label>
+														<input type="" class="form-control" name="" id="" value="" placeholder="Inserisci ...">
+													</div>
+													<div class="form-group">
+														<label for="">...</label>
+														<input type="" class="form-control" name="" id="" value="">
+													</div>
+													<button type="submit" class="btn btn-default">Invia</button>
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+											</div>
+										</div>
+      
+									</div>
+								</div>
+							</div>
+							<div class="panel-body">
+						<!-- Trigger the modal with a button -->
+								<button type="button" class="btn btn-default btn-lg btn-block btn-warning" data-toggle="modal" data-target="#richiediprovino">Richiedi un provino</button>
+							
+						<!-- Modal -->
+								<div class="modal fade" id="richiediprovino" role="dialog">
+									<div class="modal-dialog">
+    
+								<!-- Modal content-->
+										<div class="modal-content">
+	    									<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">Richiedi un provino</h4>
+											</div>
+											<div class="modal-body">
+												<form action="richiedi_provino.php" method="post">
+													<div class="form-group">
+														<label for="name">Nome</label>
+														<input type="text" class="form-control" name="name" id="name" placeholder="Inserisci nome">
+													</div>
+													<div class="form-group">
+														<label for="surname">Cognome</label>
+														<input type="text" class="form-control" name="surname" id="surname" placeholder="Inserisci cognome">
+													</div>
+													<div class="form-group">
+														<label for="">Email</label>
+														<input type="email" class="form-control" name="email" id="email" placeholder="Inserisci email">
+													</div>
+													<!--<div class="form-group">
+														<label for="">...</label>
+														<input type="" class="form-control" name="" id="" value="" placeholder="Inserisci ...">
+													</div>
+													<div class="form-group">
+														<label for="">...</label>
+														<input type="" class="form-control" name="" id="" value="">
+													</div>-->
+													<button type="submit" class="btn btn-default">Invia</button>
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+											</div>
+										</div>
+      
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">Panel Heading</div>
-						<div class="panel-body">Panel Content</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">Panel Heading</div>
-						<div class="panel-body">Panel Content</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">Panel Heading</div>
-						<div class="panel-body">Panel Content</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">Collaborazioni con:</div>
+					<div class="panel-body">
+						<a href="http://www.scuolateatrosergiotofano.it/cms/index.php?option=com_content&view=article&id=25&Itemid=30">
+							<img src="images/loghi/tofano.jpg"  alt="logoScuolaTeatroSergioTofano" class="img-responsive img-thumbnail">
+						</a>
+						<a href="https://popcorntv.it/">
+							<img src="images/loghi/popcorn.jpg" alt="logoPopcorn" class="img-responsive img-thumbnail">
+						</a>
+						<a href="http://www.pattyeditore.it/">
+							<img src="images/loghi/patty.jpg" alt="logoPattyEditore" class="img-responsive img-thumbnail">
+						</a>
+						<a href="http://www.delta9.it/">
+							<img src="images/loghi/deltanove.jpg" alt="logoDeltaNove" class="img-responsive img-thumbnail">
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<footer class="panel-footer">
-			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
-						<h1>FOOTER</h1>
+					<div class="col-xs-12" style="text-align:center">
+						<h6>Webmaster Maurizio Masi & Andrea Di Credico<br>a.dicredico@videodeltasrl.it</h6>
 					</div>
 				</div>
-			</div>
 		</footer>
 	</div>
 	

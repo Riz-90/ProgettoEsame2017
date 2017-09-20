@@ -51,16 +51,16 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">VIDEODELTA</a>
+				<a class="navbar-brand" href="index.php">VIDEODELTA</a>
 			</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Chi siamo<span class="sr-only">(current)</span></a></li>
-				<li><a href="voci.php">Le voci</a></li>
+				<li class="active"><a href="index.php">Chi siamo<span class="sr-only">(current)</span></a></li>
+				<li><a href="#">Le voci</a></li>
 				<li><a href="#">Gli studi</a></li>
-				<li><a href="clienti.php">I clienti</a></li>
+				<li><a href="#">I clienti</a></li>
 				<li><a href="#">Dove siamo</a></li>
 				<li><a href="#">Contatti</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Crediti<span class="caret"></span></a>
@@ -69,9 +69,9 @@
 						<li><a href="#">Film</a></li>
 						<li><a href="serie_tv.php">Serie tv</a></li>
 						<li><a href="#">Soap opera/Telenovela</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="tmp.php">tmp</a></li>
 						<!--<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+						<li role="separator" class="divider"></li>
 						<li><a href="#">One more separated link</a></li>-->
 					</ul>
 				</li>
@@ -111,72 +111,77 @@
 		</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
-	<div class="container">
-		<div class="row hidden-xs hidden-sm">
-		<div class="col-xs-12">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>
-
-	<!-- Wrapper for slides -->
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="images/slideshow/torino1.jpg" alt="Los Angeles">
-					<div class="carousel-caption">
-					<h2>Torino</h2>
-					<p>Studi e Uffici</p>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="images/slideshow/milano2.jpg" alt="Chicago">
-					<div class="carousel-caption">
-					<h2>Milano</h2>
-					<p>Una descrizione di questa immagine</p>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="images/slideshow/roma5.jpg" alt="New York">
-					<div class="carousel-caption">
-					<h2>Roma</h2>
-					<p>Una descrizione di questa immagine</p>
-					</div>
-				</div>
-			</div>
-
-	<!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-		</div>
-		</div>
-	</div>
 		<div class="row">
 			<div class="col-md-12">
-				<h1 class="page-header">Chi siamo</h1>
+				<h1 class="page-header">I nostri clienti</h1>
 			</div>
 			<div class="col-md-8">
-			<p>
-			Videodelta Srl è una società di doppiaggio e post-produzione audio-video sita in Torino. Fondata nel 1986, Videodelta, in questi 30 anni di ininterrotta presenza nel 
-			panorama televisivo italiano, ha acquisito e consolidato una vasta esperienza nella creazione dell’edizione italiana di tipologie eterogenee di programmi TV, quali: 
-			film, telefilm, cartoni animati, documentari, soap opera, telenovelas. I servizi offerti consentono di realizzare la versione italiana di prodotti televisivi 
-			conformemente alle specifiche tecniche richieste dai clienti e dai principali broadcaster italiani e stranieri (RTI, RAI, LA7, DISNEY, WARNER BROS, FOX, MGM, 
-			UNIVERSAL, PARAMOUNT, NETFLIX). Il prodotto finale è confezionato in SD o HD partendo dalla ricezione dei materiali (via rete con SmartJog o Aspera o su supporto 
-			fisico), con traduzione e adattamento dei dialoghi, programmazione, registrazione e sincronizzazione del doppiaggio, per terminare con missaggio, controllo qualità, 
-			lavorazioni video e grafiche (editing, titoli, cartelli, sottotitoli). Videodelta si avvale di un ampio organico di traduttori e adattatori, fonici e montatori video, 
-			nonché di un ricco panel di doppiatori professionisti e direttori del doppiaggio attivi a Torino, Roma e Milano.
-			</p>
+				<div class="container-fluid">
+      				<div class="row">
+       					<div class="col-md-4">
+         					<a href="#">
+           						<img class="img-thumbnail" src="images/loghi/media.jpg" alt="">
+          					</a>
+        				</div>
+       					<div class="col-md-4">
+         					<a href="#">
+    				    	    <img class="img-fluid img-thumbnail" src="images/loghi/disney1.jpg" alt="">
+          					</a>
+        				</div>
+       					<div class="col-md-4">
+         					<a href="#">
+      						    <img class="img-fluid img-thumbnail" src="images/loghi/netflix.jpg" alt="">
+          					</a>
+        				</div>
+       					<div class="col-md-4">
+         					<a href="#">
+            					<img class="img-fluid img-thumbnail" src="images/loghi/rai.jpg" alt="">
+          					</a>
+        				</div>
+        				<div class="col-md-4">
+         					<a href="#">
+            					<img class="img-fluid img-thumbnail" src="images/loghi/vodafone.jpg" alt="">
+          					</a>
+        				</div>
+       					<div class="col-md-4">
+         					<a href="#">
+            					<img class="img-fluid img-thumbnail" src="images/loghi/sonar.jpg" alt="">
+          					</a>
+        				</div>
+       					<div class="col-md-4">
+         					<a href="#">
+            					<img class="img-fluid img-thumbnail" src="images/loghi/paramount.jpg" alt="">
+          					</a>
+        				</div>
+       					<div class="col-md-4">
+         					<a href="#">
+            					<img class="img-fluid img-thumbnail" src="images/loghi/la7c.jpg" alt="">
+          					</a>
+        				</div>
+       					<div class="col-md-4">
+         					<a href="#">
+            					<img class="img-fluid img-thumbnail" src="images/loghi/sky2.jpg" alt="">
+          					</a>
+        				</div>
+       					<div class="col-md-4">
+         					<a href="#">
+            					<img class="img-fluid img-thumbnail" src="images/loghi/redeglobo.jpg" alt="">
+          					</a>
+        				</div>
+       					<div class="col-md-4">
+         					<a href="#">
+            				<img class="img-fluid img-thumbnail" src="images/loghi/diagonal.jpg" alt="">
+          					</a>
+        				</div>
+       					<div class="col-md-4">
+         					<a href="#">
+            					<img class="img-fluid img-thumbnail" src="images/loghi/amazon.jpg" alt="">
+          					</a>
+        				</div>
+
+        			</div>
+        		</div>
+
 			</div>
 			<div class="col-md-4">
 				<div class="panel-group">
